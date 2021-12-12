@@ -1,4 +1,4 @@
-package com.fridhi.springit.model;
+package com.fridhi.springit.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

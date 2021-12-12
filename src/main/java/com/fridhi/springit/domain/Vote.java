@@ -1,22 +1,23 @@
-package com.fridhi.springit.model;
+package com.fridhi.springit.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-
 @Entity
 @Data
 @NoArgsConstructor
-public class Link {
+public class Vote {
 
     @Id
     @GeneratedValue
     private long id;
-    private String title;
-    private String url;
+    @NonNull
+    private int vote;
+
 
 }
